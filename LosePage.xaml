@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="juego.LosePage"
+             Title="LosePage">
+
+
+
+    <Grid RowDefinitions=".3*">
+
+
+            <Grid.Background>
+
+                <LinearGradientBrush StartPoint="1,1"
+                                 EndPoint="0,0">
+                    <GradientStopCollection>
+                    <GradientStop Offset="0" Color="#ffffff"></GradientStop>
+                    <GradientStop Offset="0.6" Color="#7d7f81"></GradientStop>
+                    <GradientStop Offset="1.2" Color="#000000"></GradientStop>
+                </GradientStopCollection>
+                </LinearGradientBrush>
+
+
+
+            </Grid.Background>
+
+            <VerticalStackLayout>
+            <Label 
+            Text="Perdiste"
+            TextColor="Red"
+            FontSize="100"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="gta"/>
+
+
+            <Button Text="Regresar" 
+                    Clicked="Button_Clicked" 
+                    FontFamily="sana" 
+                    TextColor="White" 
+                    HeightRequest="100" 
+                    FontSize="40"
+                    BackgroundColor="black"
+                    Opacity="0.4"
+                    ></Button>
+        </VerticalStackLayout>
+
+        
+
+
+    </Grid>
+    
+    
+    
+    
+</ContentPage>

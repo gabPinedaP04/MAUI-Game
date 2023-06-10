@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="juego.PaginaJuego"
+             Title="PaginaJuego">
+
+
+    <Grid RowDefinitions=".5* ,.4*"
+          ColumnDefinitions=".1*, .5*, .1*">
+        
+        <ImageButton Source="backbtn.png" 
+                     BackgroundColor="Black" 
+                     x:Name="btnback" 
+                     Clicked="btnback_Clicked" 
+                     HeightRequest="120" 
+                     WidthRequest="120" 
+                     VerticalOptions="Start" 
+                     HorizontalOptions="Start"></ImageButton>
+
+
+        <Label 
+               Grid.Column="2"
+               x:Name="vidaslbl" 
+               Margin="30"
+               FontSize="20" 
+               FontFamily="gta"
+               VerticalOptions="Start" 
+               HorizontalOptions="EndAndExpand" ></Label>
+
+        <HorizontalStackLayout HorizontalOptions="Center" Grid.Column="1">
+            <VerticalStackLayout VerticalOptions="Center">
+
+
+                <Label
+                     x:Name="CurrentPregunta"
+                     Text="{Binding Question}"
+                     FontSize="60"
+                     FontFamily="gta"
+                     
+                     >
+
+                </Label>
+
+                <Label
+                    x:Name="respuesta"
+                    Text="{Binding Answer}"
+                    FontSize="30"
+                    FontFamily="sana"
+                    IsVisible="false">
+                    
+                </Label>
+
+                <Label x:Name="segundero"
+                       Text=".i."
+                       FontSize="30"
+                       FontFamily="gta"
+                       HorizontalOptions="Center"
+                       ></Label>
+
+                <Label x:Name="lblCorrectoIncorrecto"
+                       HorizontalOptions="Center"
+                       Text="{Binding Message}"
+                       FontFamily="gta"
+                       FontSize="40" ></Label>
+
+
+                <Image Source="{Binding Image}" HeightRequest="200" WidthRequest="300" Grid.Column="1"></Image>
+
+
+            </VerticalStackLayout>
+        </HorizontalStackLayout>
+
+        <VerticalStackLayout VerticalOptions="Center" Grid.Row="1" Grid.Column="1">
+
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button  x:Name="btn1" Text="{Binding Possible}" FontFamily="sana" FontSize="30" TextColor="White" BackgroundColor="Black"  BorderColor="Orange" WidthRequest="300" Clicked="btn1_Clicked"></Button>
+                <Button  x:Name="btn2" Text="{Binding Possible}" FontFamily="sana" FontSize="30" TextColor="White" BackgroundColor="Black"  BorderColor="Orange" WidthRequest="300" Clicked="btn2_Clicked"></Button>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button  x:Name="btn3" Text="{Binding Possible}" FontFamily="sana" FontSize="30" TextColor="White" BackgroundColor="Black"  BorderColor="Orange" WidthRequest="300" Clicked="btn3_Clicked"></Button>
+                <Button  x:Name="btn4" Text="{Binding Possible}" FontFamily="sana" FontSize="30" TextColor="White" BackgroundColor="Black"  BorderColor="Orange" WidthRequest="300" Clicked="btn4_Clicked"></Button>
+            </HorizontalStackLayout>
+
+            <ProgressBar x:Name="progressBar" ProgressColor="Orange" Grid.Row="1"
+                             HeightRequest="150"
+                             WidthRequest="300">
+            </ProgressBar>
+
+            
+        </VerticalStackLayout>
+       
+
+
+
+        
+
+
+
+    </Grid>
+
+
+</ContentPage>

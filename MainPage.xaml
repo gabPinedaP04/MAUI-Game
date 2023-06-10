@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="juego.MainPage">
+
+
+
+    <Grid BackgroundColor="Navy" RowDefinitions="4*, .5*">
+        <Grid.Background>
+
+            <LinearGradientBrush StartPoint="1,1"
+                                 EndPoint="0,0">
+                <GradientStopCollection>
+                    <GradientStop Offset="0" Color="#1e2400"></GradientStop>
+                    <GradientStop Offset="0.6" Color="#ff6e00"></GradientStop>
+                    <GradientStop Offset="0.9" Color="#ffc800"></GradientStop>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+
+        </Grid.Background>
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+
+            <VerticalStackLayout VerticalOptions="Center">
+
+
+
+                <Image Source="gtasa.png" HeightRequest="400" WidthRequest="150">
+                </Image>
+
+                <Button Text="Iniciar"
+                        FontFamily="sana"
+                        FontSize="40"
+                        BackgroundColor="Black"
+                        TextColor="White"
+                        x:Name="btn_iniciar"
+                        Clicked="btn_iniciar_Clicked"
+                        
+                       > 
+                </Button>
+
+            </VerticalStackLayout>
+
+
+        </HorizontalStackLayout>
+
+
+        
+        
+        
+    </Grid>
+
+</ContentPage>

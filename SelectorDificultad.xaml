@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="juego.SelectorDificultad"
+             Title="SelectorDificultad">
+
+
+    <Grid RowDefinitions="4*, 0.5*">
+
+        <HorizontalStackLayout HorizontalOptions="Center">
+           
+
+        <VerticalStackLayout VerticalOptions="Center">
+
+            <Button Text="Boton1" />
+            <Button Text="Boton1" />
+            <Button Text="Boton1" />
+
+        </VerticalStackLayout>
+
+
+        </HorizontalStackLayout>
+
+    </Grid>
+    
+    
+</ContentPage>

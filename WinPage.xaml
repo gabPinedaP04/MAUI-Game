@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="juego.WinPage"
+             Title="WinPage">
+    
+    
+
+    <Grid RowDefinitions=".3*">
+
+        <Grid.Background>
+
+            <LinearGradientBrush StartPoint="1,1"
+                                 EndPoint="0,0">
+                <GradientStopCollection>
+                    <GradientStop Offset="0" Color="#ffffff"></GradientStop>
+                    <GradientStop Offset="0.6" Color="#69d7db"></GradientStop>
+                    <GradientStop Offset="1.2" Color="#4d7ac9"></GradientStop>
+                </GradientStopCollection>
+            </LinearGradientBrush>
+
+
+
+        </Grid.Background>
+
+
+
+
+        <VerticalStackLayout>
+            <Label 
+            Text="Ganaste"
+            TextColor="#39ff00"
+            FontSize="100"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="gta"/>
+
+
+            <Button x:Name="regresarMain" 
+                    Text="Regresar" 
+                    Clicked="regresarMain_Clicked"
+                    FontFamily="sana" 
+                    BackgroundColor="Black" 
+                    Opacity="0.4"
+                    TextColor="White" 
+                    HeightRequest="100" 
+                    FontSize="40"></Button>
+        </VerticalStackLayout>
+
+
+
+
+    </Grid>
+</ContentPage>
